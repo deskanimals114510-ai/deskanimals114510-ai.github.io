@@ -15,6 +15,7 @@
   --tag-mbti: #b892ff;
   --tag-kokuyo: #8a6fd6;
   --tag-aisho: #d67ab8;
+  --tag-lovechar: #ef6b96;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -148,6 +149,7 @@ body {
 .lab-card[data-tag="mbti"] .card-tag { background: var(--tag-mbti); }
 .lab-card[data-tag="kokuyo"] .card-tag { background: var(--tag-kokuyo); }
 .lab-card[data-tag="aisho"] .card-tag { background: var(--tag-aisho); }
+.lab-card[data-tag="lovechar"] .card-tag { background: var(--tag-lovechar); }
 
 .card-icon {
   display: inline-flex;
