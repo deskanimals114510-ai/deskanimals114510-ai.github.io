@@ -214,3 +214,28 @@ body {
   text-decoration: none;
 }
 .footer-links a:hover { text-decoration: underline; }
+
+.tw-news {
+  margin-top: 40px;
+  padding: 22px 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.tw-news h2 {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+.tw-news-list {
+  margin: 0;
+  padding-left: 1.2em;
+  display: grid;
+  gap: 6px;
+}
+
+.tw-news-list a {
+  color: var(--accent-deep);
+}
