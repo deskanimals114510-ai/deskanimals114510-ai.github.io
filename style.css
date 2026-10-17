@@ -7,6 +7,7 @@
   --accent: #3f6b52;
   --accent-deep: #2d4d3b;
   --accent-tint: #dde8dd;
+  --on-accent: #ffffff;
   --line: #cdd6c5;
   --shadow-soft: 0 8px 22px rgba(30, 40, 25, 0.08);
   --shadow-lift: 0 14px 30px rgba(30, 40, 25, 0.12);
@@ -28,6 +29,7 @@
     --accent: #8fc6a4;
     --accent-deep: #b6dcc2;
     --accent-tint: #2c3a2d;
+    --on-accent: #1c211d;
     --line: #3a4636;
     --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.35);
     --shadow-lift: 0 16px 34px rgba(0, 0, 0, 0.45);
@@ -43,6 +45,7 @@
   --accent: #8fc6a4;
   --accent-deep: #b6dcc2;
   --accent-tint: #2c3a2d;
+  --on-accent: #1c211d;
   --line: #3a4636;
   --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.35);
   --shadow-lift: 0 16px 34px rgba(0, 0, 0, 0.45);
@@ -63,7 +66,7 @@ body {
   left: -999px;
   top: 0;
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
   padding: 10px 16px;
   border-radius: 0 0 8px 0;
   z-index: 100;
@@ -73,24 +76,27 @@ body {
 #app {
   max-width: 880px;
   margin: 0 auto;
-  padding: 56px 24px 40px;
+  padding: 32px 24px 40px;
+}
+
+@media (max-width: 640px) {
+  #app { padding: 28px 16px 40px; }
 }
 
 .hero {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 28px;
 }
 
 .brand-mark {
-  font-size: 2.4rem;
-  margin-bottom: 8px;
+  margin-right: 0.3em;
 }
 
 .hero h1 {
   font-family: "Klee One", "Noto Sans JP", sans-serif;
   font-weight: 600;
-  font-size: 2.2rem;
-  margin: 0 0 16px;
+  font-size: clamp(1.5rem, 6.5vw, 1.9rem);
+  margin: 0 0 8px;
   color: var(--ink);
   text-wrap: balance;
 }
@@ -100,12 +106,23 @@ body {
   font-size: 1.02rem;
   margin: 0 auto;
   max-width: 34em;
+  text-wrap: balance;
 }
 
 .lead-en {
   font-size: 0.85rem;
   font-style: italic;
-  opacity: 0.85;
+}
+
+.lab-section + .lab-section {
+  margin-top: 36px;
+}
+
+.section-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 14px;
+  color: var(--ink);
 }
 
 .lab-grid {
@@ -132,9 +149,17 @@ body {
 }
 
 .lab-card:hover,
-.lab-card:focus-visible {
+.lab-card:focus-visible,
+.mini-card:hover,
+.mini-card:focus-visible {
   transform: translateY(-3px);
   box-shadow: var(--shadow-lift);
+}
+
+.lab-card:focus-visible,
+.mini-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .card-tag {
@@ -164,7 +189,7 @@ body {
 }
 .card-icon svg { width: 22px; height: 22px; }
 
-.lab-card h2 {
+.lab-card h3 {
   font-family: "Klee One", "Noto Sans JP", sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
@@ -180,14 +205,52 @@ body {
 .tagline-en {
   font-size: 0.78rem;
   font-style: italic;
-  opacity: 0.85;
 }
 
-.card-url {
-  font-size: 0.76rem;
-  color: var(--accent-deep);
+.mini-grid {
+  list-style: none;
   margin: 0;
-  word-break: break-all;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+@media (min-width: 641px) {
+  .mini-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.lab-grid > .lab-card:only-child {
+  grid-column: 1 / -1;
+}
+
+.mini-card {
+  display: block;
+  height: 100%;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--tag-lovechar);
+  border-radius: 12px;
+  padding: 12px 14px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.mini-title {
+  display: block;
+  font-family: "Klee One", "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.mini-desc {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
 }
 
 .site-footer {
@@ -210,32 +273,22 @@ body {
 }
 
 .footer-links a {
+  display: inline-block;
+  padding: 4px 2px;
   color: var(--accent-deep);
   text-decoration: none;
 }
 .footer-links a:hover { text-decoration: underline; }
 
-.tw-news {
-  margin-top: 40px;
-  padding: 22px 24px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-}
-
-.tw-news h2 {
-  margin: 0 0 12px;
-  font-size: 1.05rem;
-  color: var(--ink);
-}
-
-.tw-news-list {
-  margin: 0;
-  padding-left: 1.2em;
-  display: grid;
-  gap: 6px;
-}
-
-.tw-news-list a {
-  color: var(--accent-deep);
+@media (prefers-reduced-motion: reduce) {
+  .lab-card,
+  .mini-card {
+    transition: none;
+  }
+  .lab-card:hover,
+  .lab-card:focus-visible,
+  .mini-card:hover,
+  .mini-card:focus-visible {
+    transform: none;
+  }
 }

@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="0J0w_U9KWunnJqs_cK5Oh1yQ9owq_4TMpYkJdkPbA4E" />
 <title>Desk Animals Lab</title>
-<meta name="description" content="Desk Animals Labが作った、犬猫の年齢・体重換算ツール「Tiny Wonders」、チャット形式のMBTI診断・相性診断・四柱推命「黒曜診断」をまとめたポータルサイトです。">
+<meta name="description" content="MBTI診断・四柱推命「黒曜診断」・恋愛キャラ診断・相性診断、メロい度診断など10問1分の単発診断、動物の暮らし方ガイドと雑学「Tiny Wonders」。Desk Animals Labの作品まとめ。">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Desk Animals Lab">
-<meta property="og:description" content="犬猫の換算ツール・雑学サイトと、チャット形式の性格診断・相性診断・四柱推命鑑定。Desk Animals Labが作った4つのサイトをまとめました。">
+<meta property="og:description" content="MBTI診断・四柱推命・恋愛キャラ診断・相性診断と、メロい度診断など10問1分の単発診断。動物の暮らし方ガイドと雑学のTiny Wondersも。Desk Animals Labの作品まとめです。">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:url" content="https://deskanimals114510-ai.github.io/">
 <link rel="canonical" href="https://deskanimals114510-ai.github.io/">
@@ -17,7 +17,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Desk Animals Lab">
-<meta name="twitter:description" content="犬猫の換算ツール・雑学サイトと、チャット形式の性格診断・相性診断・四柱推命鑑定をまとめたポータル。">
+<meta name="twitter:description" content="MBTI診断・四柱推命・恋愛キャラ診断と、10問1分の単発診断、動物の暮らし方ガイドと雑学。Desk Animals Labの作品まとめ。">
 <meta name="twitter:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%A7%AA</text></svg>">
@@ -41,11 +41,17 @@
   "@context": "https://schema.org",
   "@type": "ItemList",
   "itemListElement": [
-    { "@type": "SiteNavigationElement", "position": 1, "name": "Tiny Wonders", "url": "https://deskanimals114510-ai.github.io/tiny-wonders/" },
-    { "@type": "SiteNavigationElement", "position": 2, "name": "MBTI性格・恋愛・仕事タイプ診断", "url": "https://deskanimals114510-ai.github.io/personality-type-quiz/" },
-    { "@type": "SiteNavigationElement", "position": 3, "name": "黒曜診断", "url": "https://deskanimals114510-ai.github.io/kokuyo-shindan/" },
+    { "@type": "SiteNavigationElement", "position": 1, "name": "MBTI性格・恋愛・仕事タイプ診断", "url": "https://deskanimals114510-ai.github.io/personality-type-quiz/" },
+    { "@type": "SiteNavigationElement", "position": 2, "name": "黒曜診断", "url": "https://deskanimals114510-ai.github.io/kokuyo-shindan/" },
+    { "@type": "SiteNavigationElement", "position": 3, "name": "恋愛キャラ診断", "url": "https://deskanimals114510-ai.github.io/lovechar64/" },
     { "@type": "SiteNavigationElement", "position": 4, "name": "相性診断", "url": "https://deskanimals114510-ai.github.io/aisho-shindan/" },
-    { "@type": "SiteNavigationElement", "position": 5, "name": "恋愛キャラ診断", "url": "https://deskanimals114510-ai.github.io/lovechar64/" }
+    { "@type": "SiteNavigationElement", "position": 5, "name": "メロい度診断", "url": "https://deskanimals114510-ai.github.io/personality-type-quiz/meroi.html" },
+    { "@type": "SiteNavigationElement", "position": 6, "name": "何系にメロる?診断", "url": "https://deskanimals114510-ai.github.io/personality-type-quiz/meroru.html" },
+    { "@type": "SiteNavigationElement", "position": 7, "name": "何すぎて滅?診断", "url": "https://deskanimals114510-ai.github.io/personality-type-quiz/metsu.html" },
+    { "@type": "SiteNavigationElement", "position": 8, "name": "何デレ診断", "url": "https://deskanimals114510-ai.github.io/personality-type-quiz/nandere.html" },
+    { "@type": "SiteNavigationElement", "position": 9, "name": "恋の罪診断", "url": "https://deskanimals114510-ai.github.io/personality-type-quiz/koi-tsumi.html" },
+    { "@type": "SiteNavigationElement", "position": 10, "name": "フレネミー度診断", "url": "https://deskanimals114510-ai.github.io/personality-type-quiz/frenemy.html" },
+    { "@type": "SiteNavigationElement", "position": 11, "name": "Tiny Wonders", "url": "https://deskanimals114510-ai.github.io/tiny-wonders/" }
   ]
 }
 </script>
@@ -56,105 +62,128 @@
 <div id="app">
 
   <header class="hero">
-    <div class="brand-mark" aria-hidden="true">🧪</div>
-    <h1>Desk Animals Lab</h1>
+    <h1><span class="brand-mark" aria-hidden="true">🧪</span>Desk Animals Lab</h1>
     <p class="lead">
       小さな好奇心を、AIと一緒にかたちにする実験室。<br>
-      <span class="lead-en">A small lab where curiosity meets AI.</span>
+      <span class="lead-en" lang="en">A small lab where curiosity meets AI.</span>
     </p>
   </header>
 
   <main id="main">
-    <section class="lab-grid" aria-label="サイト一覧">
+    <section class="lab-section" aria-labelledby="sec-sites">
+      <h2 id="sec-sites" class="section-title">診断サイト</h2>
+      <div class="lab-grid">
 
-      <a class="lab-card" data-tag="tiny-wonders" href="https://deskanimals114510-ai.github.io/tiny-wonders/?utm_source=dal-portal&utm_medium=referral&utm_campaign=cross_site">
-        <span class="card-tag"></span>
-        <span class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7.5" r="1.6"/><circle cx="12.2" cy="5.3" r="1.6"/><circle cx="17.4" cy="7.5" r="1.6"/><path d="M12.2 10.8c-3.2 0-5.7 2.2-5.7 5 0 1.6 1.3 2.6 3 2.2 1-.2 1.8-.7 2.7-.7s1.7.5 2.7.7c1.7.4 3-.6 3-2.2 0-2.8-2.5-5-5.7-5z"/></svg>
-        </span>
-        <h2>Tiny Wonders</h2>
-        <p class="card-tagline">
-          動物の「なぜ?」と「ざんねん」の雑学に、犬猫・うさぎ・ハムスター・鳥と暮らすためのガイドも。<br>
-          <span class="tagline-en">Animal trivia, plus practical care guides for dogs, cats, rabbits, hamsters and birds.</span>
-        </p>
-        <p class="card-url">deskanimals114510-ai.github.io/tiny-wonders</p>
-      </a>
+        <a class="lab-card" data-tag="mbti" href="https://deskanimals114510-ai.github.io/personality-type-quiz/">
+          <span class="card-tag"></span>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a7 7 0 0 0-4 12.7V19a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-3.3A7 7 0 0 0 12 3z"/><path d="M9.5 21h5"/><path d="M12 8v3M10.3 9.7 12 11l1.7-1.3"/></svg>
+          </span>
+          <h3>MBTI性格・恋愛・仕事タイプ診断</h3>
+          <p class="card-tagline">
+            チャット形式で答えるだけの3分診断。性格・恋愛・仕事でタイプが変わるかも?<br>
+            <span class="tagline-en" lang="en">A 3-min chat-style quiz for your personality, love &amp; work type.</span>
+          </p>
+        </a>
 
-      <a class="lab-card" data-tag="mbti" href="https://deskanimals114510-ai.github.io/personality-type-quiz/">
-        <span class="card-tag"></span>
-        <span class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a7 7 0 0 0-4 12.7V19a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-3.3A7 7 0 0 0 12 3z"/><path d="M9.5 21h5"/><path d="M12 8v3M10.3 9.7 12 11l1.7-1.3"/></svg>
-        </span>
-        <h2>MBTI性格・恋愛・仕事タイプ診断</h2>
-        <p class="card-tagline">
-          チャット形式で答えるだけの3分診断。性格・恋愛・仕事でタイプが変わるかも?<br>
-          <span class="tagline-en">A 3-min chat-style quiz for your personality, love &amp; work type.</span>
-        </p>
-        <p class="card-url">deskanimals114510-ai.github.io/personality-type-quiz</p>
-      </a>
+        <a class="lab-card" data-tag="kokuyo" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/">
+          <span class="card-tag"></span>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="11" r="6"/><path d="M8 20h8M12 17v3"/><path d="M9.5 9.2c0-1.4 1.1-2.4 2.5-2.4s2.5 1 2.5 2.4c0 1.2-.8 1.8-1.6 2.4-.6.5-1 .9-1 1.6"/><circle cx="12" cy="15.2" r=".15" fill="currentColor"/></svg>
+          </span>
+          <h3>黒曜診断</h3>
+          <p class="card-tagline">
+            生年月日から四柱推命ベースで占う無料鑑定。「黒曜先生」があなたの本質をズバッと。<br>
+            <span class="tagline-en" lang="en">A free Four Pillars fortune reading from your birth date.</span>
+          </p>
+        </a>
 
-      <a class="lab-card" data-tag="kokuyo" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/">
-        <span class="card-tag"></span>
-        <span class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="11" r="6"/><path d="M8 20h8M12 17v3"/><path d="M9.5 9.2c0-1.4 1.1-2.4 2.5-2.4s2.5 1 2.5 2.4c0 1.2-.8 1.8-1.6 2.4-.6.5-1 .9-1 1.6"/><circle cx="12" cy="15.2" r=".15" fill="currentColor"/></svg>
-        </span>
-        <h2>黒曜診断</h2>
-        <p class="card-tagline">
-          生年月日から四柱推命ベースで占う無料鑑定。「黒曜先生」があなたの本質をズバッと。<br>
-          <span class="tagline-en">A free Four Pillars fortune reading from your birth date.</span>
-        </p>
-        <p class="card-url">deskanimals114510-ai.github.io/kokuyo-shindan</p>
-      </a>
+        <a class="lab-card" data-tag="lovechar" href="https://deskanimals114510-ai.github.io/lovechar64/">
+          <span class="card-tag"></span>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.6-10-9.2C.5 8.4 2.4 5 6 5c2 0 3.5 1 4 2.5C10.5 6 12 5 14 5c3.6 0 5.5 3.4 4 6.8C20.5 16.4 12 21 12 21z"/></svg>
+          </span>
+          <h3>恋愛キャラ診断</h3>
+          <p class="card-tagline">
+            チャット形式で8問に答えるだけの無料診断。64通りの恋愛キャラから、あなたのタイプを毒舌イラスト付きで。<br>
+            <span class="tagline-en" lang="en">An 8-question chat-style quiz revealing one of 64 love characters.</span>
+          </p>
+        </a>
 
-      <a class="lab-card" data-tag="aisho" href="https://deskanimals114510-ai.github.io/aisho-shindan/">
-        <span class="card-tag"></span>
-        <span class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 8.5a3 3 0 1 1 4 4.4l-.5.5"/><path d="M15.5 15.5a3 3 0 1 1-4-4.4l.5-.5"/></svg>
-        </span>
-        <h2>相性診断</h2>
-        <p class="card-tagline">
-          性格診断の結果コードから、あなたとお相手の相性を3カテゴリで診断。<br>
-          <span class="tagline-en">Check your compatibility using your quiz result codes.</span>
-        </p>
-        <p class="card-url">deskanimals114510-ai.github.io/aisho-shindan</p>
-      </a>
+        <a class="lab-card" data-tag="aisho" href="https://deskanimals114510-ai.github.io/aisho-shindan/">
+          <span class="card-tag"></span>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 8.5a3 3 0 1 1 4 4.4l-.5.5"/><path d="M15.5 15.5a3 3 0 1 1-4-4.4l.5-.5"/></svg>
+          </span>
+          <h3>相性診断</h3>
+          <p class="card-tagline">
+            性格診断の結果コードから、あなたとお相手の相性を、性格・恋愛・仕事の3つで診断。<br>
+            <span class="tagline-en" lang="en">Check your compatibility using your quiz result codes.</span>
+          </p>
+        </a>
 
-      <a class="lab-card" data-tag="lovechar" href="https://deskanimals114510-ai.github.io/lovechar64/">
-        <span class="card-tag"></span>
-        <span class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.6-10-9.2C.5 8.4 2.4 5 6 5c2 0 3.5 1 4 2.5C10.5 6 12 5 14 5c3.6 0 5.5 3.4 4 6.8C20.5 16.4 12 21 12 21z"/></svg>
-        </span>
-        <h2>恋愛キャラ診断</h2>
-        <p class="card-tagline">
-          チャット形式の8問だけの無料診断。64通りのキャラを毒舌イラスト付きで診断。<br>
-          <span class="tagline-en">An 8-question chat-style quiz revealing one of 64 love characters.</span>
-        </p>
-        <p class="card-url">deskanimals114510-ai.github.io/lovechar64</p>
-      </a>
-
+      </div>
     </section>
 
-    <section class="tw-news" aria-labelledby="tw-news-title">
-      <h2 id="tw-news-title">Tiny Wonders の読みもの</h2>
-      <ul class="tw-news-list">
-        <li><a href="https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/fuyu-care.html">犬猫の冬の寒さ対策ガイド</a></li>
-        <li><a href="https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/fuyu-items.html">冬の寒さ対策グッズの選び方</a></li>
-        <li><a href="https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/">動物とのくらし方(犬猫・うさぎ・ハムスター・鳥)</a></li>
-        <li><a href="https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku-quiz.html">動物雑学○×クイズ</a></li>
-        <li><a href="https://deskanimals114510-ai.github.io/tiny-wonders/about/">運営者情報・記事の作り方</a></li>
+    <section class="lab-section" aria-labelledby="sec-quick">
+      <h2 id="sec-quick" class="section-title">10問1分の単発診断</h2>
+      <ul class="mini-grid">
+        <li><a class="mini-card" href="https://deskanimals114510-ai.github.io/personality-type-quiz/meroi.html">
+          <span class="mini-title">メロい度診断</span>
+          <span class="mini-desc">あなたのメロさは、わんこ系?ツンねこ系?</span>
+        </a></li>
+        <li><a class="mini-card" href="https://deskanimals114510-ai.github.io/personality-type-quiz/meroru.html">
+          <span class="mini-title">何系にメロる?診断</span>
+          <span class="mini-desc">好きになる相手の系統がわかる、メロい度の姉妹診断</span>
+        </a></li>
+        <li><a class="mini-card" href="https://deskanimals114510-ai.github.io/personality-type-quiz/metsu.html">
+          <span class="mini-title">何すぎて滅?診断</span>
+          <span class="mini-desc">好きな人や推しの、何に一番やられる?</span>
+        </a></li>
+        <li><a class="mini-card" href="https://deskanimals114510-ai.github.io/personality-type-quiz/nandere.html">
+          <span class="mini-title">何デレ診断</span>
+          <span class="mini-desc">ツンデレ・クーデレなど、あなたのデレ方は?</span>
+        </a></li>
+        <li><a class="mini-card" href="https://deskanimals114510-ai.github.io/personality-type-quiz/koi-tsumi.html">
+          <span class="mini-title">恋の罪診断</span>
+          <span class="mini-desc">恋のダメなクセを悪魔キャラで診断</span>
+        </a></li>
+        <li><a class="mini-card" href="https://deskanimals114510-ai.github.io/personality-type-quiz/frenemy.html">
+          <span class="mini-title">フレネミー度診断</span>
+          <span class="mini-desc">友達へのちょっとした毒は何タイプ?</span>
+        </a></li>
       </ul>
+    </section>
+
+    <section class="lab-section" aria-labelledby="sec-animals">
+      <h2 id="sec-animals" class="section-title">動物の暮らし方と雑学</h2>
+      <div class="lab-grid">
+        <a class="lab-card" data-tag="tiny-wonders" href="https://deskanimals114510-ai.github.io/tiny-wonders/?utm_source=dal-portal&utm_medium=referral&utm_campaign=cross_site">
+          <span class="card-tag"></span>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7.5" r="1.6"/><circle cx="12.2" cy="5.3" r="1.6"/><circle cx="17.4" cy="7.5" r="1.6"/><path d="M12.2 10.8c-3.2 0-5.7 2.2-5.7 5 0 1.6 1.3 2.6 3 2.2 1-.2 1.8-.7 2.7-.7s1.7.5 2.7.7c1.7.4 3-.6 3-2.2 0-2.8-2.5-5-5.7-5z"/></svg>
+          </span>
+          <h3>Tiny Wonders</h3>
+          <p class="card-tagline">
+            犬猫・うさぎ・ハムスター・鳥と暮らすためのガイドと、動物の「なぜ?」の雑学。<br>
+            <span class="tagline-en" lang="en">Practical care guides for dogs, cats, rabbits, hamsters and birds, plus animal trivia.</span>
+          </p>
+        </a>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>このサイトのコンテンツはAIの制作支援を受けています。</p>
-    <p>This site's content is produced with AI assistance.</p>
+    <p lang="en">This site's content is produced with AI assistance.</p>
     <p>このサイトはアクセス解析にGoogleアナリティクスを使っており、計測にCookieを使用します(個人を特定する情報は集めていません)。</p>
-    <p>This site uses Google Analytics, which uses cookies to measure visits (no personally identifying information is collected).</p>
+    <p lang="en">This site uses Google Analytics, which uses cookies to measure visits (no personally identifying information is collected).</p>
     <div class="footer-links">
       <a href="https://x.com/deskanimalslab" target="_blank" rel="noopener">X (@deskanimalslab)</a>
       <a href="https://www.instagram.com/desk.animals114510/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://deskanimals114510-ai.github.io/personality-type-quiz/gift/">🎁 タイプ別プレゼントガイド</a>
+      <a href="https://www.tiktok.com/@desk.animals" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://note.com/sora_deskanimals" target="_blank" rel="noopener">note</a>
+      <a href="https://deskanimals114510-ai.github.io/personality-type-quiz/gift/"><span aria-hidden="true">🎁</span> タイプ別プレゼントガイド</a>
       <a href="https://deskanimals114510-ai.github.io/tiny-wonders/privacy/index.html">プライバシーポリシー・運営者情報</a>
     </div>
   </footer>
