@@ -7,3 +7,4 @@ Sitemap: https://deskanimals114510-ai.github.io/personality-type-quiz/sitemap.xm
 Sitemap: https://deskanimals114510-ai.github.io/kokuyo-shindan/sitemap.xml
 Sitemap: https://deskanimals114510-ai.github.io/aisho-shindan/sitemap.xml
 Sitemap: https://deskanimals114510-ai.github.io/lovechar64/sitemap.xml
+Sitemap: https://deskanimals114510-ai.github.io/koyoi-hondana/sitemap.xml
