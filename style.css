@@ -19,6 +19,7 @@
   --tag-lovechar: #ef6b96;
   --tag-koyoi: #e8b96a;
   --tag-oshi: #5fb3a1;
+  --tag-video: #e07a5f;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -179,6 +180,7 @@ body {
 .lab-card[data-tag="lovechar"] .card-tag { background: var(--tag-lovechar); }
 .lab-card[data-tag="koyoi"] .card-tag { background: var(--tag-koyoi); }
 .lab-card[data-tag="oshi"] .card-tag { background: var(--tag-oshi); }
+.lab-card[data-tag="video"] .card-tag { background: var(--tag-video); }
 
 .card-icon {
   display: inline-flex;
