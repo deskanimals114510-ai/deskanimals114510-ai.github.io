@@ -9,3 +9,4 @@ Sitemap: https://deskanimals114510-ai.github.io/aisho-shindan/sitemap.xml
 Sitemap: https://deskanimals114510-ai.github.io/lovechar64/sitemap.xml
 Sitemap: https://deskanimals114510-ai.github.io/koyoi-hondana/sitemap.xml
 Sitemap: https://deskanimals114510-ai.github.io/oshi-nizukuri/sitemap.xml
+Sitemap: https://deskanimals114510-ai.github.io/mototore-dentaku/sitemap.xml
